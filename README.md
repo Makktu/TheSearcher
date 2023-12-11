@@ -1,6 +1,8 @@
 # The Searcher
 
-An app that will provide a generic search portal and display results for any provided data object (JSON only to begin with).
+React Native.
+
+A mobile app that will provide a generic search portal and display results for any provided data object (JSON only to begin with).
 
 The user will be able to load a JSON data set from anywhere and search it.
 
