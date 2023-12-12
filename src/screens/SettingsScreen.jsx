@@ -4,7 +4,7 @@ import React from 'react';
 export default function SettingsScreen() {
   return (
     <View style={styles.container}>
-      <Text>SettingsScreen</Text>
+      <Text style={{ color: 'white' }}>SettingsScreen</Text>
     </View>
   );
 }
