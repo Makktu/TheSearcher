@@ -1,10 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
+import OutcomeMessage from '../components/OutcomeMessage';
 
 export default function SettingsScreen() {
   return (
     <View style={styles.container}>
-      <Text style={{ color: 'white' }}>SettingsScreen</Text>
+      <OutcomeMessage>There's nothing here yet...</OutcomeMessage>
     </View>
   );
 }

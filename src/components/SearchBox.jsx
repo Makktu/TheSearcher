@@ -8,7 +8,11 @@ import {
 } from 'react-native';
 import React from 'react';
 
-export default function SearchBox({ enteredText, inputHandler }) {
+export default function SearchBox({
+  enteredText,
+  inputHandler,
+  clearPressHandler,
+}) {
   return (
     <View style={styles.container}>
       <TextInput
@@ -22,7 +26,7 @@ export default function SearchBox({ enteredText, inputHandler }) {
         placeholderTextColor='black'
         keyboardAppearance='dark'
       />
-      <Pressable style={styles.clearButton}>
+      <Pressable onPress={clearPressHandler} style={styles.clearButton}>
         <View>
           <Text style={styles.clearText}>CLEAR</Text>
         </View>

@@ -13,6 +13,7 @@ export default function App() {
       <StatusBar style='light' />
       <NavigationContainer>
         <BottomTabs.Navigator
+          initialRouteName='Search'
           screenOptions={{
             headerStyle: {
               backgroundColor: '#4f627a',
