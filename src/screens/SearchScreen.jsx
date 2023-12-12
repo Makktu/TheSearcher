@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
   },
   searchContainerWithKeyboard: {
     position: 'absolute',
-    top: 0,
+    top: 200,
     width: '100%',
   },
   keyboard: {

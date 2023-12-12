@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
+    marginBottom: 4,
   },
   textInput: {
     height: 70,
@@ -51,7 +52,7 @@ const styles = StyleSheet.create({
   clearButton: {
     width: '20%',
     height: 70,
-    backgroundColor: 'red',
+    backgroundColor: '#5f6276',
     borderRadius: 4,
     marginLeft: 2,
     justifyContent: 'center',
