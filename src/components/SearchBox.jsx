@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     marginBottom: 4,
   },
   textInput: {
-    height: 70,
+    height: 58,
     width: '76%',
     fontSize: 26,
     backgroundColor: '#eae0e0',
@@ -55,15 +55,16 @@ const styles = StyleSheet.create({
   },
   clearButton: {
     width: '20%',
-    height: 70,
-    backgroundColor: '#5f6276',
+    height: 58,
+    backgroundColor: '#c0c2d5',
     borderRadius: 4,
     marginLeft: 2,
     justifyContent: 'center',
     alignItems: 'center',
   },
   clearText: {
-    fontSize: 22,
+    fontSize: 16,
     fontWeight: 'bold',
+    color: '#1e1b1b',
   },
 });

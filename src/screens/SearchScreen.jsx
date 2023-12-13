@@ -54,13 +54,7 @@ export default function SearchScreen() {
   return (
     <KeyboardAvoidingView style={styles.keyboard} behavior='padding' enabled>
       <View style={styles.container}>
-        <View
-          style={
-            keyboardShowing || results.length > 0
-              ? styles.searchContainerWithKeyboard
-              : styles.searchContainer
-          }
-        >
+        <View style={styles.searchContainer}>
           <SearchBox
             enteredText={enteredText}
             inputHandler={inputHandler}
@@ -85,7 +79,7 @@ const styles = StyleSheet.create({
   },
   searchContainer: {
     position: 'absolute',
-    bottom: 0,
+    top: 0,
     width: '100%',
   },
   searchContainerWithKeyboard: {
