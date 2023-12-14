@@ -4,6 +4,6 @@
   "lang": "en",
   "name": "TheSearcher",
   "short_name": "TheSearcher",
-  "start_url": "/?utm_source=web_app_manifest",
+  "start_url": "/TheSearcher",
   "orientation": "portrait"
 }
