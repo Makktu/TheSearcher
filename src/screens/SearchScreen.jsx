@@ -1,10 +1,11 @@
-import { StyleSheet, KeyboardAvoidingView, View, Text } from 'react-native';
+import { StyleSheet, KeyboardAvoidingView, View } from 'react-native';
 import React, { useState } from 'react';
 import SearchBox from '../components/SearchBox';
 import OutcomeMessage from '../components/OutcomeMessage';
 import DisplayResults from '../components/DisplayResults';
 import { Keyboard } from 'react-native';
 import searchData from '../../util/search-data';
+import LayoutEncompass from '../../util/LayoutEncompass';
 
 export default function SearchScreen() {
   const [keyboardShowing, setKeyboardShowing] = useState(false);
@@ -53,20 +54,22 @@ export default function SearchScreen() {
 
   return (
     <KeyboardAvoidingView style={styles.keyboard} behavior='padding' enabled>
-      <View style={styles.container}>
-        <View style={styles.searchContainer}>
-          <SearchBox
-            enteredText={enteredText}
-            inputHandler={inputHandler}
-            clearPressHandler={clearPressHandler}
-          />
-          {outcomeMsg && keyboardShowing ? (
-            <OutcomeMessage>{outcomeMsg}</OutcomeMessage>
-          ) : (
-            <DisplayResults results={results} />
-          )}
+      <LayoutEncompass>
+        <View style={styles.container}>
+          <View style={styles.searchContainer}>
+            <SearchBox
+              enteredText={enteredText}
+              inputHandler={inputHandler}
+              clearPressHandler={clearPressHandler}
+            />
+            {outcomeMsg && keyboardShowing ? (
+              <OutcomeMessage>{outcomeMsg}</OutcomeMessage>
+            ) : (
+              <DisplayResults results={results} />
+            )}
+          </View>
         </View>
-      </View>
+      </LayoutEncompass>
     </KeyboardAvoidingView>
   );
 }
@@ -74,6 +77,7 @@ export default function SearchScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    minHeight: 50,
     backgroundColor: '#333f50',
     flexDirection: 'column',
   },

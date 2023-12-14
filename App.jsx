@@ -15,6 +15,10 @@ export default function App() {
         <BottomTabs.Navigator
           initialRouteName='Search'
           screenOptions={{
+            cardStyle: {
+              width: '100%',
+              flex: 1,
+            },
             headerStyle: {
               backgroundColor: '#4f627a',
             },

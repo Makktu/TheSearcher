@@ -5,17 +5,19 @@ import OutcomeMessage from '../components/OutcomeMessage';
 export default function SettingsScreen() {
   return (
     <View style={styles.container}>
-      <OutcomeMessage>There's nothing here yet...</OutcomeMessage>
-      <Text style={styles.text}>
-        The Searcher is an app for mobile and web. It is intended to be a
-        user-friendly and intuitive to use.
-      </Text>
+      <OutcomeMessage>Nothing here yet...</OutcomeMessage>
+      <Text style={styles.text}>TheSearcher is an app for mobile and web.</Text>
       <Text style={styles.text}>
         It will enable the user to connect to any custom data set and perform an
-        ad hoc, rapid search of it, with results displayed on the same screen.
+        ad hoc search with results displayed in realtime.
       </Text>
-      <Text style={styles.text}>Datasets loaded: UHCW Locations</Text>
-      <Text style={styles.text}>5368 Objects</Text>
+      <Text style={styles.text}>
+        Users will be able to load data in any format.
+      </Text>
+      <Text style={styles.text}>
+        Dataset loaded: UHCW Locations{'\n'}Type: JSON{'\n'}
+        Searchable Objects: 5963
+      </Text>
     </View>
   );
 }
@@ -26,8 +28,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#333f50',
   },
   text: {
-    fontSize: 16,
+    fontSize: 22,
     color: 'white',
-    padding: 20,
+    padding: 10,
   },
 });
