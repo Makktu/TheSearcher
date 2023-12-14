@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/thesearcher/static/js/main.c682a2c5.js",
-    "static/js/929.6bf5fa0b.js": "/thesearcher/static/js/929.6bf5fa0b.js",
-    "static/media/Ionicons.ttf": "/thesearcher/static/media/Ionicons.3517aeaa34b2f8cd8eef.ttf",
-    "favicon.ico": "/thesearcher/favicon.ico",
-    "index.html": "/thesearcher/index.html",
-    "favicon-32.png": "/thesearcher/favicon-32.png",
-    "favicon-16.png": "/thesearcher/favicon-16.png",
-    "manifest.json": "/thesearcher/manifest.json",
-    "serve.json": "/thesearcher/serve.json",
-    "main.c682a2c5.js.map": "/thesearcher/static/js/main.c682a2c5.js.map",
-    "929.6bf5fa0b.js.map": "/thesearcher/static/js/929.6bf5fa0b.js.map"
+    "main.js": "/TheSearcher/static/js/main.415bec6a.js",
+    "static/js/929.6bf5fa0b.js": "/TheSearcher/static/js/929.6bf5fa0b.js",
+    "static/media/Ionicons.ttf": "/TheSearcher/static/media/Ionicons.3517aeaa34b2f8cd8eef.ttf",
+    "favicon.ico": "/TheSearcher/favicon.ico",
+    "index.html": "/TheSearcher/index.html",
+    "favicon-32.png": "/TheSearcher/favicon-32.png",
+    "favicon-16.png": "/TheSearcher/favicon-16.png",
+    "manifest.json": "/TheSearcher/manifest.json",
+    "serve.json": "/TheSearcher/serve.json",
+    "main.415bec6a.js.map": "/TheSearcher/static/js/main.415bec6a.js.map",
+    "929.6bf5fa0b.js.map": "/TheSearcher/static/js/929.6bf5fa0b.js.map"
   },
   "entrypoints": [
     "static/js/929.6bf5fa0b.js",
-    "static/js/main.c682a2c5.js"
+    "static/js/main.415bec6a.js"
   ]
 }
