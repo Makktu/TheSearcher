@@ -98,10 +98,9 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     marginVertical: '5%',
     padding: 10,
-    backgroundColor: '#3a5a41',
-    width: '90%',
+    backgroundColor: '#343943',
+    width: '100%',
     flexDirection: 'column',
     justifyContent: 'space-between',
-    alignItems: 'center',
   },
 });
