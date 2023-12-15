@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/TheSearcher/static/js/main.415bec6a.js",
+    "main.js": "/TheSearcher/static/js/main.14527202.js",
     "static/js/929.6bf5fa0b.js": "/TheSearcher/static/js/929.6bf5fa0b.js",
     "static/media/Ionicons.ttf": "/TheSearcher/static/media/Ionicons.3517aeaa34b2f8cd8eef.ttf",
     "favicon.ico": "/TheSearcher/favicon.ico",
@@ -9,11 +9,11 @@
     "favicon-16.png": "/TheSearcher/favicon-16.png",
     "manifest.json": "/TheSearcher/manifest.json",
     "serve.json": "/TheSearcher/serve.json",
-    "main.415bec6a.js.map": "/TheSearcher/static/js/main.415bec6a.js.map",
+    "main.14527202.js.map": "/TheSearcher/static/js/main.14527202.js.map",
     "929.6bf5fa0b.js.map": "/TheSearcher/static/js/929.6bf5fa0b.js.map"
   },
   "entrypoints": [
     "static/js/929.6bf5fa0b.js",
-    "static/js/main.415bec6a.js"
+    "static/js/main.14527202.js"
   ]
 }
