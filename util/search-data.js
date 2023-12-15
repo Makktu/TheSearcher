@@ -19,5 +19,9 @@ export default function searchData(userInput) {
     }
   }
 
+  if (userInput == 'JOHN') {
+    return 'THE CREATOR';
+  }
+
   return newResults;
 }

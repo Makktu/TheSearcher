@@ -29,12 +29,17 @@ export default function SearchScreen() {
       return;
     }
     const newResults = searchData(theText);
+
+    if (newResults == 'THE CREATOR') {
+      setOutcomeMsg(newResults);
+      return;
+    }
+
     if (newResults.length < 1 && theText.length > 2) {
       setOutcomeMsg('Nothing Found');
     } else {
       setOutcomeMsg('');
     }
-    console.log(theText, newResults);
     setResults(newResults);
   };
 
@@ -62,7 +67,7 @@ export default function SearchScreen() {
               inputHandler={inputHandler}
               clearPressHandler={clearPressHandler}
             />
-            {outcomeMsg && keyboardShowing ? (
+            {outcomeMsg ? (
               <OutcomeMessage>{outcomeMsg}</OutcomeMessage>
             ) : (
               <DisplayResults results={results} />
