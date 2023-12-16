@@ -1,27 +1,21 @@
-import { StyleSheet, KeyboardAvoidingView, View } from 'react-native';
+import {
+  StyleSheet,
+  KeyboardAvoidingView,
+  View,
+  ImageBackground,
+} from 'react-native';
 import React, { useState } from 'react';
 import SearchBox from '../components/SearchBox';
 import OutcomeMessage from '../components/OutcomeMessage';
 import DisplayResults from '../components/DisplayResults';
-import { Keyboard } from 'react-native';
 import searchData from '../../util/search-data';
 import LayoutEncompass from '../../util/LayoutEncompass';
 
 export default function SearchScreen() {
-  const [keyboardShowing, setKeyboardShowing] = useState(false);
-  const [searching, setSearching] = useState(false);
+  // const [searching, setSearching] = useState(false);
   const [enteredText, setEnteredText] = useState('');
   const [results, setResults] = useState([]);
   const [outcomeMsg, setOutcomeMsg] = useState('');
-
-  Keyboard.addListener('keyboardDidHide', () => {
-    console.log('showing');
-    setKeyboardShowing(false);
-  });
-  Keyboard.addListener('keyboardDidShow', () => {
-    console.log('hiding');
-    setKeyboardShowing(true);
-  });
 
   const startSearching = (theText) => {
     if (!theText) {
@@ -58,8 +52,12 @@ export default function SearchScreen() {
   };
 
   return (
-    <KeyboardAvoidingView style={styles.keyboard} behavior='padding' enabled>
-      <LayoutEncompass>
+    <ImageBackground
+      source={require('./../../assets/img/TheSearchTool.png')}
+      resizeMode='cover'
+      style={{ flex: 1, justifyContent: 'center' }}
+    >
+      <KeyboardAvoidingView style={styles.keyboard} behavior='padding' enabled>
         <View style={styles.container}>
           <View style={styles.searchContainer}>
             <SearchBox
@@ -74,8 +72,8 @@ export default function SearchScreen() {
             )}
           </View>
         </View>
-      </LayoutEncompass>
-    </KeyboardAvoidingView>
+      </KeyboardAvoidingView>
+    </ImageBackground>
   );
 }
 
