@@ -1,9 +1,4 @@
-import {
-  StyleSheet,
-  KeyboardAvoidingView,
-  View,
-  ImageBackground,
-} from 'react-native';
+import { StyleSheet, KeyboardAvoidingView, View } from 'react-native';
 import React, { useState } from 'react';
 import SearchBox from '../components/SearchBox';
 import OutcomeMessage from '../components/OutcomeMessage';
@@ -52,28 +47,22 @@ export default function SearchScreen() {
   };
 
   return (
-    <ImageBackground
-      source={require('./../../assets/img/TheSearchTool.png')}
-      resizeMode='cover'
-      style={{ flex: 1, justifyContent: 'center' }}
-    >
-      <KeyboardAvoidingView style={styles.keyboard} behavior='padding' enabled>
-        <View style={styles.container}>
-          <View style={styles.searchContainer}>
-            <SearchBox
-              enteredText={enteredText}
-              inputHandler={inputHandler}
-              clearPressHandler={clearPressHandler}
-            />
-            {outcomeMsg ? (
-              <OutcomeMessage>{outcomeMsg}</OutcomeMessage>
-            ) : (
-              <DisplayResults results={results} />
-            )}
-          </View>
+    <KeyboardAvoidingView style={styles.keyboard} behavior='padding' enabled>
+      <View style={styles.container}>
+        <View style={styles.searchContainer}>
+          <SearchBox
+            enteredText={enteredText}
+            inputHandler={inputHandler}
+            clearPressHandler={clearPressHandler}
+          />
+          {outcomeMsg ? (
+            <OutcomeMessage>{outcomeMsg}</OutcomeMessage>
+          ) : (
+            <DisplayResults results={results} />
+          )}
         </View>
-      </KeyboardAvoidingView>
-    </ImageBackground>
+      </View>
+    </KeyboardAvoidingView>
   );
 }
 
