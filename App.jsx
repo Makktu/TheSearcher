@@ -25,6 +25,7 @@ export default function App() {
                 width: '100%',
                 flex: 1,
                 backgroundColor: 'transparent',
+                opacity: 1,
               },
               headerStyle: {
                 backgroundColor: '#4f627a',
