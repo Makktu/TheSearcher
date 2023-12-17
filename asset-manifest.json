@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/TheSearcher/static/js/main.4ccf0e1a.js",
-    "static/js/390.641b8cd0.js": "/TheSearcher/static/js/390.641b8cd0.js",
+    "main.js": "/TheSearcher/static/js/main.5d1c69ea.js",
+    "static/js/390.3937bf8c.js": "/TheSearcher/static/js/390.3937bf8c.js",
     "static/media/TheSearchTool.png": "/TheSearcher/static/media/TheSearchTool.a9c773365f9515110587.png",
     "static/media/Gears.png": "/TheSearcher/static/media/Gears.bb45c72d3139d95e1ad3.png",
     "static/media/Ionicons.ttf": "/TheSearcher/static/media/Ionicons.3517aeaa34b2f8cd8eef.ttf",
@@ -11,11 +11,11 @@
     "favicon-16.png": "/TheSearcher/favicon-16.png",
     "manifest.json": "/TheSearcher/manifest.json",
     "serve.json": "/TheSearcher/serve.json",
-    "main.4ccf0e1a.js.map": "/TheSearcher/static/js/main.4ccf0e1a.js.map",
-    "390.641b8cd0.js.map": "/TheSearcher/static/js/390.641b8cd0.js.map"
+    "main.5d1c69ea.js.map": "/TheSearcher/static/js/main.5d1c69ea.js.map",
+    "390.3937bf8c.js.map": "/TheSearcher/static/js/390.3937bf8c.js.map"
   },
   "entrypoints": [
-    "static/js/390.641b8cd0.js",
-    "static/js/main.4ccf0e1a.js"
+    "static/js/390.3937bf8c.js",
+    "static/js/main.5d1c69ea.js"
   ]
 }
