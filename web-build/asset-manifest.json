@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.js": "/TheSearcher/static/js/main.14527202.js",
-    "static/js/929.6bf5fa0b.js": "/TheSearcher/static/js/929.6bf5fa0b.js",
+    "main.js": "/TheSearcher/static/js/main.4ccf0e1a.js",
+    "static/js/390.641b8cd0.js": "/TheSearcher/static/js/390.641b8cd0.js",
+    "static/media/TheSearchTool.png": "/TheSearcher/static/media/TheSearchTool.a9c773365f9515110587.png",
+    "static/media/Gears.png": "/TheSearcher/static/media/Gears.bb45c72d3139d95e1ad3.png",
     "static/media/Ionicons.ttf": "/TheSearcher/static/media/Ionicons.3517aeaa34b2f8cd8eef.ttf",
     "favicon.ico": "/TheSearcher/favicon.ico",
     "index.html": "/TheSearcher/index.html",
@@ -9,11 +11,11 @@
     "favicon-16.png": "/TheSearcher/favicon-16.png",
     "manifest.json": "/TheSearcher/manifest.json",
     "serve.json": "/TheSearcher/serve.json",
-    "main.14527202.js.map": "/TheSearcher/static/js/main.14527202.js.map",
-    "929.6bf5fa0b.js.map": "/TheSearcher/static/js/929.6bf5fa0b.js.map"
+    "main.4ccf0e1a.js.map": "/TheSearcher/static/js/main.4ccf0e1a.js.map",
+    "390.641b8cd0.js.map": "/TheSearcher/static/js/390.641b8cd0.js.map"
   },
   "entrypoints": [
-    "static/js/929.6bf5fa0b.js",
-    "static/js/main.14527202.js"
+    "static/js/390.641b8cd0.js",
+    "static/js/main.4ccf0e1a.js"
   ]
 }

@@ -1,11 +1,4 @@
-import {
-  StyleSheet,
-  Text,
-  View,
-  Pressable,
-  TextInput,
-  InputAccessoryView,
-} from 'react-native';
+import { StyleSheet, Text, View, Pressable, TextInput } from 'react-native';
 import React from 'react';
 
 export default function SearchBox({
@@ -40,11 +33,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: 4,
+    marginVertical: 4,
   },
   textInput: {
     height: 58,
-    width: '76%',
+    width: '78%',
     fontSize: 26,
     backgroundColor: '#eae0e0',
     color: 'whitesmoke',

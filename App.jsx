@@ -13,59 +13,55 @@ export default function App() {
     <>
       <StatusBar style='light' />
       <NavigationContainer>
-        <ImageBackground
-          source={require('./assets/img/TheSearchTool.png')}
-          resizeMode='cover'
-          style={{ width: '100%', height: '100%' }}
+        <BottomTabs.Navigator
+          initialRouteName='Search'
+          screenOptions={{
+            cardStyle: {
+              width: '100%',
+              flex: 1,
+            },
+            headerStyle: {
+              backgroundColor: '#4f627a',
+            },
+            headerShadowVisible: false,
+            headerTintColor: 'white',
+            tabBarStyle: {
+              backgroundColor: '#4f627a',
+              borderTopWidth: 1,
+              borderTopColor: '#4b5561',
+            },
+            tabBarActiveTintColor: '#ffffff',
+            headerTitle: 'The Searcher',
+            headerTitleStyle: {
+              alignItems: 'center',
+              fontSize: 24,
+            },
+          }}
         >
-          <BottomTabs.Navigator
-            initialRouteName='Search'
-            screenOptions={{
-              cardStyle: {
-                width: '100%',
-                flex: 1,
-                backgroundColor: 'transparent',
-                opacity: 1,
-              },
-              headerStyle: {
-                backgroundColor: '#4f627a',
-              },
-              headerShadowVisible: false,
-              headerTintColor: 'white',
-              tabBarStyle: {
-                backgroundColor: '#4f627a',
-                borderTopWidth: 1,
-                borderTopColor: '#4b5561',
-              },
-              tabBarActiveTintColor: '#ffffff',
-              headerTitle: 'The Searcher',
+          <BottomTabs.Screen
+            name='Settings'
+            component={SettingsScreen}
+            options={{
+              title: 'Settings',
+              tabBarLabel: 'Settings',
+              tabBarIcon: ({ color, size }) => (
+                <Ionicons name='settings-outline' size={size} color={color} />
+              ),
             }}
-          >
-            <BottomTabs.Screen
-              name='Settings'
-              component={SettingsScreen}
-              options={{
-                title: 'Settings',
-                tabBarLabel: 'Settings',
-                tabBarIcon: ({ color, size }) => (
-                  <Ionicons name='settings-outline' size={size} color={color} />
-                ),
-              }}
-            />
-            <BottomTabs.Screen
-              name='Search'
-              component={SearchScreen}
-              options={{
-                title: 'Search',
-                tabBarLabel: 'Search',
-                tabBarIcon: ({ color, size }) => (
-                  <Ionicons name='search-outline' size={size} color={color} />
-                ),
-                color: 'black',
-              }}
-            />
-          </BottomTabs.Navigator>
-        </ImageBackground>
+          />
+          <BottomTabs.Screen
+            name='Search'
+            component={SearchScreen}
+            options={{
+              title: 'Search',
+              tabBarLabel: 'Search',
+              tabBarIcon: ({ color, size }) => (
+                <Ionicons name='search-outline' size={size} color={color} />
+              ),
+              color: 'black',
+            }}
+          />
+        </BottomTabs.Navigator>
       </NavigationContainer>
     </>
   );

@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
   displayArea: {
     flex: 1,
     padding: 10,
-    // maxHeight: '90%',
+    opacity: 1,
   },
   resultStyle: {
     borderWidth: 2,
