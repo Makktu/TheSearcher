@@ -20,7 +20,7 @@ export default function DisplayResults({ results }) {
                     results.length == 1 ? styles.singularResult : styles.results
                   }
                 >
-                  {item['Wing'].length > 14
+                  {item['Wing']?.length > 14
                     ? item['Wing'].slice(0, 14)
                     : item['Wing']}
                 </Text>
@@ -29,7 +29,7 @@ export default function DisplayResults({ results }) {
                     results.length == 1 ? styles.singularResult : styles.results
                   }
                 >
-                  {item['Department'].length > 18
+                  {item['Department']?.length > 18
                     ? item['Department'].slice(0, 18)
                     : item['Department']}
                 </Text>
@@ -41,13 +41,15 @@ export default function DisplayResults({ results }) {
                     results.length == 1 ? styles.singularResult : styles.results
                   }
                 >
-                  {item['Description'].length > 12 && results.length !== 1
+                  {item['Description']?.length > 12 && results?.length !== 1
                     ? item['Description'].slice(0, 12)
                     : item['Description']}
                 </Text>
                 <Text
                   style={
-                    results.length == 1 ? styles.singularResult : styles.results
+                    results?.length == 1
+                      ? styles.singularResult
+                      : styles.results
                   }
                 >
                   {item['Room Num']}
