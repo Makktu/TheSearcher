@@ -3,13 +3,13 @@ import {
   KeyboardAvoidingView,
   View,
   ImageBackground,
+  Button,
 } from 'react-native';
 import React, { useState } from 'react';
 import SearchBox from '../components/SearchBox';
 import OutcomeMessage from '../components/OutcomeMessage';
 import DisplayResults from '../components/DisplayResults';
 import searchData from '../../util/search-data';
-import LayoutEncompass from '../../util/LayoutEncompass';
 
 export default function SearchScreen() {
   const [enteredText, setEnteredText] = useState('');

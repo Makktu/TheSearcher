@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 import SearchScreen from './src/screens/SearchScreen';
 import SettingsScreen from './src/screens/SettingsScreen';
-import { ImageBackground } from 'react-native';
+import { PaperProvider } from 'react-native-paper';
 
 const BottomTabs = createBottomTabNavigator();
 

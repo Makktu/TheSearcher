@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 import React from 'react';
 import OutcomeMessage from '../components/OutcomeMessage';
+import { Button, Icon, Searchbar } from 'react-native-paper';
 
 export default function SettingsScreen() {
   return (
@@ -25,6 +26,15 @@ export default function SettingsScreen() {
           Dataset loaded: UHCW Locations{'\n'}Type: JSON{'\n'}
           Searchable Objects: 5963
         </Text>
+        <Button
+          icon='camera'
+          mode='contained'
+          onPress={() => console.log('Pressed')}
+        >
+          Press me
+        </Button>
+        <Icon source='camera' color={'green'} size={50} />
+        <Searchbar placeholder='Search' value='' />
       </View>
     </ImageBackground>
   );
