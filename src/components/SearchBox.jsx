@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View, Pressable, TextInput } from 'react-native';
+import { Button, Icon, Searchbar } from 'react-native-paper';
 import React from 'react';
 
 export default function SearchBox({
@@ -8,7 +9,7 @@ export default function SearchBox({
 }) {
   return (
     <View style={styles.container}>
-      <TextInput
+      {/* <TextInput
         style={styles.textInput}
         maxLength={16}
         autoCapitalize='characters'
@@ -18,37 +19,43 @@ export default function SearchBox({
         placeholder='Search'
         placeholderTextColor='black'
         keyboardAppearance='dark'
+      /> */}
+      <Searchbar
+        placeholder='Search'
+        placeholderTextColor={'gray'}
+        value={enteredText}
+        style={styles.textInput}
+        onChangeText={inputHandler}
+        keyboardAppearance='dark'
+        autoCapitalize='characters'
+        mode='bar'
+        elevation={5}
+        inputStyle={{ fontSize: 30, textDecorationStyle: 'solid' }}
+        onClearIconPress={clearPressHandler}
       />
-      <Pressable onPress={clearPressHandler} style={styles.clearButton}>
-        <View>
-          <Text style={styles.clearText}>CLEAR</Text>
-        </View>
-      </Pressable>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row',
+    flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
     marginVertical: 4,
   },
   textInput: {
     height: 58,
-    width: '78%',
-    fontSize: 26,
+    width: '100%',
+    fontSize: 38,
     backgroundColor: '#eae0e0',
     color: 'whitesmoke',
     padding: 2,
     color: 'black',
     textAlign: 'center',
-    borderRadius: 4,
+    marginTop: 4,
   },
   clearButton: {
-    width: '20%',
-    height: 58,
     backgroundColor: '#c0c2d5',
     borderRadius: 4,
     marginLeft: 2,
@@ -56,7 +63,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   clearText: {
-    fontSize: 16,
+    fontSize: 32,
     fontWeight: 'bold',
     color: '#1e1b1b',
   },
