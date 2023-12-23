@@ -9,6 +9,7 @@ import React, { useState } from 'react';
 import SearchBox from '../components/SearchBox';
 import OutcomeMessage from '../components/OutcomeMessage';
 import DisplayResults from '../components/DisplayResults';
+import BigMassiveButton from '../components/BigMassiveButton';
 import searchData from '../../util/search-data';
 
 export default function SearchScreen() {
@@ -70,6 +71,14 @@ export default function SearchScreen() {
               <DisplayResults results={results} />
             )}
           </View>
+          {/* <View
+            style={{
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            <BigMassiveButton />
+          </View> */}
         </View>
       </KeyboardAvoidingView>
     </ImageBackground>

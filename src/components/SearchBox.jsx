@@ -9,17 +9,6 @@ export default function SearchBox({
 }) {
   return (
     <View style={styles.container}>
-      {/* <TextInput
-        style={styles.textInput}
-        maxLength={16}
-        autoCapitalize='characters'
-        autoCorrect={false}
-        value={enteredText}
-        onChangeText={inputHandler}
-        placeholder='Search'
-        placeholderTextColor='black'
-        keyboardAppearance='dark'
-      /> */}
       <Searchbar
         placeholder='Search'
         placeholderTextColor={'gray'}
@@ -43,6 +32,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginVertical: 4,
+    marginHorizontal: 4,
   },
   textInput: {
     height: 58,
