@@ -21,3 +21,7 @@ Added basic Search and Cancel buttons, and new components for same. Not connecte
 ### 12 December 2023
 
 Added all search functionality and the old display styling just to see. Working next on the web/mobile functionality. The same problem as before still exists: the search box vanishes on the web view when the user starts typing.
+
+### 24 December 2023
+
+All major features complete and search bar scroll fixed on iOS and web view. The search result list itself still does not scroll. This is a problem.
