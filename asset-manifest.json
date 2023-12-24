@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/TheSearcher/static/js/main.dcb7e13b.js",
+    "main.js": "/TheSearcher/static/js/main.3cc50a6c.js",
     "static/js/566.afa2b1be.js": "/TheSearcher/static/js/566.afa2b1be.js",
     "static/media/TheSearchTool.png": "/TheSearcher/static/media/TheSearchTool.a9c773365f9515110587.png",
     "static/media/MaterialCommunityIcons.ttf": "/TheSearcher/static/media/MaterialCommunityIcons.5d42b4e60858731e7b65.ttf",
@@ -12,11 +12,11 @@
     "favicon-16.png": "/TheSearcher/favicon-16.png",
     "manifest.json": "/TheSearcher/manifest.json",
     "serve.json": "/TheSearcher/serve.json",
-    "main.dcb7e13b.js.map": "/TheSearcher/static/js/main.dcb7e13b.js.map",
+    "main.3cc50a6c.js.map": "/TheSearcher/static/js/main.3cc50a6c.js.map",
     "566.afa2b1be.js.map": "/TheSearcher/static/js/566.afa2b1be.js.map"
   },
   "entrypoints": [
     "static/js/566.afa2b1be.js",
-    "static/js/main.dcb7e13b.js"
+    "static/js/main.3cc50a6c.js"
   ]
 }
