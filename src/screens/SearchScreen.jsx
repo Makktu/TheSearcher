@@ -9,7 +9,6 @@ import React, { useState } from 'react';
 import SearchBox from '../components/SearchBox';
 import OutcomeMessage from '../components/OutcomeMessage';
 import DisplayResults from '../components/DisplayResults';
-import BigMassiveButton from '../components/BigMassiveButton';
 import searchData from '../../util/search-data';
 
 export default function SearchScreen() {
@@ -55,7 +54,7 @@ export default function SearchScreen() {
     <ImageBackground
       source={require('./../../assets/img/TheSearchTool.png')}
       resizeMode='cover'
-      style={{ width: '100%', height: '100%' }}
+      style={{ width: '100%', height: '100%', flex: 1 }}
     >
       <KeyboardAvoidingView style={styles.keyboard} behavior='padding' enabled>
         <View style={styles.container}>
@@ -71,14 +70,6 @@ export default function SearchScreen() {
               <DisplayResults results={results} />
             )}
           </View>
-          {/* <View
-            style={{
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
-            <BigMassiveButton />
-          </View> */}
         </View>
       </KeyboardAvoidingView>
     </ImageBackground>
@@ -92,11 +83,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#333f50',
     opacity: 0.8,
     flexDirection: 'column',
+    width: '100%',
   },
   searchContainer: {
     position: 'absolute',
     top: 0,
     width: '100%',
+    flex: 1,
   },
   searchContainerWithKeyboard: {
     position: 'absolute',

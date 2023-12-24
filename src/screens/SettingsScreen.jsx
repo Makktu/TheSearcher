@@ -11,19 +11,18 @@ export default function SettingsScreen() {
       style={{ width: '100%', height: '100%' }}
     >
       <View style={styles.container}>
-        <OutcomeMessage>Nothing here yet...</OutcomeMessage>
+        <OutcomeMessage>
+          The Searcher is an app for mobile and web that searches any collection
+          of data with results displayed in realtime as the user types.
+        </OutcomeMessage>
         <Text style={styles.text}>
-          TheSearcher is an app for mobile and web.
+          Future versions will allow the loading of any data in any format from
+          any source.
         </Text>
         <Text style={styles.text}>
-          It will enable the user to connect to any custom data set and perform
-          an ad hoc search with results displayed in realtime.
-        </Text>
-        <Text style={styles.text}>
-          Users will be able to load data in any format.
-        </Text>
-        <Text style={styles.text}>
-          Dataset loaded: UHCW Locations{'\n'}Type: JSON{'\n'}
+          Current Dataset loaded:{'\n'}UHCW Locations{'\n'}
+          {'\n'}Type: JSON{'\n'}
+          {'\n'}
           Searchable Objects: 5963
         </Text>
       </View>
